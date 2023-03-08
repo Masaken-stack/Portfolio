@@ -1,8 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    </head>
-    <body>
-        <p>Hellow warld!!</p>
-    </body>
+<head>
+	<meta charset="UTF-8">
+	<title>My Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact Me</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="about">
+			<h1>About Me</h1>
+			<p>Hi, my name is John and I'm a web developer.</p>
+		</section>
+		<section id="services">
+			<h2>Services</h2>
+			<ul>
+				<li>Web development</li>
+				<li>UI/UX design</li>
+				<li>SEO optimization</li>
+			</ul>
+		</section>
+		<section id="projects">
+			<h2>Projects</h2>
+			<ul>
+				<li><a href="#">Project 1</a></li>
+				<li><a href="#">Project 2</a></li>
+				<li><a href="#">Project 3</a></li>
+			</ul>
+		</section>
+		<section id="contact">
+			<h2>Contact Me</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email">
+				<label for="message">Message:</label>
+				<textarea id="message" name="message"></textarea>
+				<input type="submit" value="Send">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 John Smith. All rights reserved.</p>
+	</footer>
+</body>
 </html>
