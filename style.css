@@ -1,50 +1,145 @@
-body {
-	font-family: Arial, sans-serif;
+/* リセットCSS */
+* {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
+/* ヘッダー */
 header {
-	background-color: #333;
-	color: #fff;
-	padding: 20px;
+	background-color: #222;
+	height: 80px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
 }
 
 nav ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+	height: 100%;
 }
 
 nav li {
-	display: inline-block;
+	margin: 0 10px;
 }
 
 nav a {
 	color: #fff;
-	padding: 10px;
+	font-size: 20px;
+	font-weight: 700;
 	text-decoration: none;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	padding: 0 10px;
+	transition: background-color 0.5s;
 }
 
 nav a:hover {
 	background-color: #444;
 }
 
+/* メインコンテンツ */
 main {
-	margin: 20px;
+	margin-top: 80px;
+	padding: 50px;
+	background-color: #fff;
 }
 
-section {
-	margin-bottom: 40px;
+h1, h2, h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	margin-bottom: 20px;
 }
 
-h1, h2 {
-	font-weight: normal;
+#about {
+	background-color: #f2f2f2;
+	padding: 50px;
 }
 
-form label {
+#about p {
+	font-size: 18px;
+	line-height: 1.5;
+	color: #666;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul li {
+	margin: 0 10px 20px 0;
+}
+
+ul li:last-child {
+	margin-right: 0;
+}
+
+ul li a {
 	display: block;
-	margin-bottom: 10px;
+	position: relative;
+	overflow: hidden;
 }
 
-form input[type=text], form input[type=email], form textarea
+ul li a img {
+	transition: transform 0.5s;
+}
+
+ul li a:hover img {
+	transform: scale(1.1);
+}
+
+ul li a h3 {
+	font-size: 18px;
+	font-weight: 700;
+	margin: 10px 0;
+	color: #333;
+}
+
+ul li a p {
+	font-size: 16px;
+	line-height: 1.5;
+	color: #666;
+}
+
+form {
+	margin-top: 50px;
+}
+
+label {
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	display: block;
+}
+
+input, textarea {
+	font-size: 16px;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+input[type="submit"] {
+	background-color: #222;
+	color: #fff;
+	cursor: pointer;
+	transition: background-color 0.5s;
+}
+
+input[type="submit"]:hover {
+	background-color: #444;
+}
